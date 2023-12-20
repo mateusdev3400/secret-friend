@@ -1,4 +1,4 @@
-import { quantityFriends, nameFriendSecret, elementListFriendsAdded, buttonSort } from "../variables/variable.js";
+import { quantityFriends, nameFriendSecret, elementListFriendsAdded } from "../variables/variable.js";
 import { listSecretFriend } from "../mock/listSecretFriend.js";
 import { validationField } from "../validation/validationField.js";
 
