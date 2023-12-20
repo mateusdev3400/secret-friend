@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amigo Secreto</title>
+    <link rel="shortcut icon" href="images/logo-present.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header class="header">
+        <img src="images/logo.png" width="10%"/>
+    </header>
+
+    <main class="container">
+        <article class="content">
+            <section class="content__space add-friend">
+                <h1 class="content__title">Amigo Secreto</h1>
+
+                <form class="form">
+                    <div class="form__group">
+                        <label class="form__label">Digite o nome de um amigo</label>
+                        <input type="text" placeholder="Nome do amigo" class="form__input"/>
+                    </div>
+
+                    <div class="form__buttons">
+                        <button onclick="addSecretFriend(event)" class="form__button form__button-blue" id="button-add">Adicionar</button>
+                        <button onclick="drawSecretFriend(event)" class="form__button form__button-white" id="button-sort">Sortear</button>
+                        <button onclick="restartSecretFriend(event)" class="form__button form__button-green" id="button-restart">Reiniciar</button>
+                    </div>
+                </form>
+            </section>
+
+            <section class="content__space list-friend">
+                <div class="content__group">
+                    <h2 class="content__subtitle">Amigos incluídos</h2>
+                    <p class="content__friend" id="added-friends-list"></p>
+                </div>
+
+                <div class="content__group">
+                    <h2 class="content__subtitle text-green">Sorteio</h2>
+                    <div class="content__group content__friend" id="friends-list-peers"></div>
+                </div>
+
+                <div class="content__group" id="alert-mensage"></div>
+            </section>
+        </article>
+    </main>
+
+    <!-- SCRIPT -->
+    <script src="js/index.js" type="module" defer></script>
+    <!-- SCRIPT -->
+</body>
+</html>
